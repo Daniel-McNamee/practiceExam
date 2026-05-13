@@ -1,0 +1,55 @@
+<div class="card shadow-sm p-4 mb-4">
+
+  <h3 class="mb-4">
+    Add Item
+  </h3>
+
+  <form (ngSubmit)="addItem()">
+
+    <div class="mb-3">
+
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Title"
+        name="title"
+        [(ngModel)]="title"
+        required>
+
+    </div>
+
+    <div class="mb-3">
+
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Description"
+        name="description"
+        [(ngModel)]="description"
+        required>
+
+    </div>
+
+    <div class="mb-3">
+
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Image URL"
+        name="image"
+        [(ngModel)]="image"
+        required>
+
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-success">
+
+      Add Item
+
+    </button>
+
+  </form>
+
+</div>
